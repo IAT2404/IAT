@@ -83,6 +83,35 @@
             padding: 20px 0;
             margin-top: 40px;
         }
+          .destinos-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+        .destinos-options {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .destinos-options ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .destinos-options li {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        .destinos-image {
+            flex: 1;
+            text-align: right;
+        .destinos-img {
+            width: 80%; 
+            height: auto;
+            display: inline-block;
+            }
     </style>
 </head>
 <body>
@@ -127,20 +156,19 @@
         </section>
         <section id="destinos">
             <h2 class="section-title">Destinos</h2>
+            <div class="destinos-container">
+            <div class="destinos-options">
             <p>Explora nuestros destinos populares y encuentra tu próximo destino de ensueño. Desde playas paradisíacas hasta ciudades vibrantes, tenemos algo para todos.</p>
-            <img src="https://github.com/IAT2404/IAT/blob/main/Destinos2409.jpg?raw=true" alt="Imagen de destinos populares" style="width:100%; height:auto;">
-            <div class="card">
-                <h3>Playa</h3>
-                <p>Descubre las playas más hermosas y relajantes del mundo.</p>
-            </div>
-            <div class="card">
-                <h3>Montaña</h3>
-                <p>Explora los destinos montañosos más impresionantes.</p>
-            </div>
-            <div class="card">
-                <h3>Ciudad</h3>
-                <p>Visita las ciudades más vibrantes y culturales.</p>
-            </div>
+            <ul>
+                <li>Montaña</li>
+                <li>Playa</li>
+                <li>Ciudad</li>
+             </ul>
+                </div>
+                <div class="destinos-image">
+            <img src="https://github.com/IAT2404/IAT/blob/main/Destinos2409.jpg?raw=true" alt="Imagen de destinos populares" class="destinos-img">
+                    </div>
+                </div>
         </section>
         <section id="reservas">
             <h2 class="section-title">Reservas</h2>
