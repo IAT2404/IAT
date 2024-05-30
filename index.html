@@ -62,7 +62,7 @@
             font-family: 'Permanent Marker', sans-serif;
             margin-bottom: 65px;
         }
-        .promotions, .testimonials, .news {
+        .promotions, .testimonials, .news, .services {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
@@ -75,6 +75,12 @@
             padding: 20px;
             width: 30%;
             box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+        }
+        .services-section {
+            background-image: url('path-to-your-image.jpg'); /* Ruta de la imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            padding: 40px 20px;
         }
         footer {
             background-color: #333;
@@ -180,27 +186,29 @@
     <div class="container">
         <section id="sobre-nosotros">
             <h2 class="section-title">Sobre Nosotros</h2>
-            <p>Bienvenido a INFINITY ADVENTURE TRAVEL, tu agencia de viajes de confianza. Ofrecemos experiencias de viaje únicas y personalizadas para todos nuestros clientes. Nuestra misión es crear recuerdos inolvidables y aventuras emocionantes.</p>
-            <p>En INFINITY ADVENTURE TRAVEL, nos enorgullecemos de nuestra capacidad para proporcionar itinerarios hechos a la medida que se adaptan a las necesidades y deseos individuales de cada cliente. Ya sea que estés buscando una escapada relajante en una playa tropical, una aventura llena de adrenalina en la selva, o un recorrido cultural en las ciudades más emblemáticas del mundo, nosotros te tenemos cubierto.</p>
+            <p>Bienvenido a INFINITY ADVENTURE TRAVELS, tu agencia de viajes de confianza. Ofrecemos experiencias de viaje únicas y personalizadas para todos nuestros clientes. Nuestra misión es crear recuerdos inolvidables y aventuras emocionantes.</p>
+            <p>En INFINITY ADVENTURE TRAVELS, nos enorgullecemos de nuestra capacidad para proporcionar itinerarios hechos a la medida que se adaptan a las necesidades y deseos individuales de cada cliente. Ya sea que estés buscando una escapada relajante en una playa tropical, una aventura llena de adrenalina en la selva, o un recorrido cultural en las ciudades más emblemáticas del mundo, nosotros te tenemos cubierto.</p>
             <p>Te ayudamos a descubrir los destinos más populares y los tesoros escondidos. Trabajamos con una red global de socios confiables para asegurarnos de que cada aspecto de tu viaje sea perfecto, desde los vuelos y el alojamiento hasta las excursiones y las comidas.</p>
             <p>Creemos que viajar es una de las mejores maneras de enriquecer la vida, y estamos comprometidos a hacer que cada viaje sea una experiencia única y memorable. Nos esforzamos por superar las expectativas de nuestros clientes con un servicio excepcional y atención al detalle.</p>
-            <p>Gracias por elegir INFINITY ADVENTURE TRAVEL. Esperamos ayudarte a descubrir el mundo y a crear recuerdos que durarán toda la vida.</p>
+            <p>Gracias por elegir INFINITY ADVENTURE TRAVELS. Esperamos ayudarte a descubrir el mundo y a crear recuerdos que durarán toda la vida.</p>
         </section>
-        <section id="servicios">
+        <section id="servicios" class="services-section">
             <h2 class="section-title">Servicios</h2>
-            <div class="card">
-                <h3>Paquetes Todo Incluido</h3>
-                <p>Disfruta de nuestras ofertas de paquetes todo incluido para que no te preocupes por nada.</p>
-            </div>
-            <div class="card">
-                <h3>Asesoría Personalizada</h3>
-                <p>Te ayudamos a planear tu viaje perfecto con nuestra asesoría preferencial y personalizada.
-                   Nos enfocamos en crear una experiencia de viaje única</p>
-            </div>
-            <div class="card">
-                <h3>Soporte 24/7</h3>
-                <p>Nuestro equipo está disponible las 24 horas del día, los 7 días de la semana para asistirte
-                  y puedas sentirte seguro durante todo tu viaje.</p>
+            <div class="services">
+                <div class="card">
+                    <h3>Paquetes Todo Incluido</h3>
+                    <p>Disfruta de nuestras ofertas de paquetes todo incluido para que no te preocupes por nada.</p>
+                </div>
+                <div class="card">
+                    <h3>Asesoría Personalizada</h3>
+                    <p>Te ayudamos a planear tu viaje perfecto con nuestra asesoría preferencial y personalizada.
+                       Nos enfocamos en crear una experiencia de viaje única</p>
+                </div>
+                <div class="card">
+                    <h3>Soporte 24/7</h3>
+                    <p>Nuestro equipo está disponible las 24 horas del día, los 7 días de la semana para asistirte
+                      y puedas sentirte seguro durante todo tu viaje.</p>
+                </div>
             </div>
         </section>
         <section id="destinos">
@@ -215,14 +223,13 @@
                     </ul>
                 </div>
                 <div class="destinos-image">
-                    <img src="https://github.com/IAT2404/IAT/blob/main/Destinos2409.jpg?raw=true" alt="Imagen de destinos populares" class="destinos-img">
+                    <img src="https://raw.githubusercontent.com/IAT2404/IAT/main/WhatsApp%20Image%202023-06-21%20at%209.58.26%20PM.jpeg" alt="Imagen de Destinos" class="destinos-img">
                 </div>
             </div>
         </section>
         <section id="reservas">
             <h2 class="section-title">Reservas</h2>
-            <p>Reserva tu próximo viaje con nosotros y aprovecha nuestras ofertas exclusivas.</p>
-            <p>Si desea una reservación por favor llene el siguiente formulario y nos pondremos en contacto lo antes posible.</p>
+            <p>Por favor, completa el siguiente formulario para realizar tu reserva y nos pondremos en contacto lo antes posible.</p>
             <div class="form-container">
                 <form action="#" method="post">
                     <label for="name">Nombre:</label>
@@ -267,12 +274,7 @@
         </section>
         <section id="contacto">
             <h2 class="section-title">Contacto</h2>
-            <p>Puedes contactarnos a través de nuestro correo electrónico Infinityadventuretravel@gmail.com </p>
-            <p>                                                                                    </p>
-            <p>Contactanos a los telefonos +614-138-1423 y +614-223-6490 via telefonica o Whats app.</p>
-            <p>                                                                                    </p>
-            <p>Tambien puedes contactarnos a través de nuestras redes sociales     </p>
-            <p>                                                                                    </p>
+            <p>Puedes contactarnos a través de nuestro correo electrónico Infinityadventuretravel@gmail.com o llamarnos al +614-138-1423 y +614-223-6490.</p>
         </section>
         <section id="news">
             <h2 class="section-title">Noticias y Experiencias</h2>
