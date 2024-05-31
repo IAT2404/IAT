@@ -68,17 +68,18 @@
             flex-wrap: wrap;
         }
         .card {
-            background-color: #f4f4f4;
+            background-color: rgba(244, 244, 244, 0.5);  /* Color de fondo con transparencia en Servicios*/
             border: 1px solid #ddd;
             border-radius: 8px;
             margin: 20px;
             padding: 20px;
-            width: 30%;
+            width: 20%; /* Ajusta este valor para hacer los recuadros más pequeños en Servicios */
             box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
             display: flex;
             flex-direction: column;
             align-items: center;
-            text-align: center; /* Centrar horizontalmente el texto */
+            text-align: center; /* Centrar horizontalmente el texto en Servicios */
+            font-family: 'Roboto', sans-serif; /* Cambia esto por la fuente que prefieras */
         }
         .services-section {
             background-image: url(https://github.com/IAT2404/IAT/blob/main/playa_04.jpg?raw=true); /* Ruta de la imagen de fondo */
@@ -229,7 +230,7 @@
                 </div>
             </div>
         </section>
-        <section id="destinos" style="margin-top: 40px; margin-bottom: 40px;;>
+        <section id="destinos">
             <h2 class="section-title">Destinos</h2>
             <div class="destinos-container">
                 <div class="destinos-options">
