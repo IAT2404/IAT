@@ -95,7 +95,7 @@
             right: 0;
             bottom: 0;
             background: url(https://github.com/IAT2404/IAT/blob/main/Map03.jpg?raw=true) center center/cover no-repeat;
-            opacity: 0.1; /* Ajusta este valor para cambiar la transparencia de la imagen de fondo */
+            opacity: 0.5; /* Ajusta este valor para cambiar la transparencia de la imagen de fondo */
         }
         .services {
             position: relative;
@@ -482,5 +482,30 @@
     <footer>
         <p>&copy; 2024 INFINITY ADVENTURE TRAVEL. Todos los derechos reservados.</p>
     </footer>
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Contenido del Modal</p>
+            <button onclick="closeModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('myModal').style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            var modal = document.getElementById('myModal');
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
