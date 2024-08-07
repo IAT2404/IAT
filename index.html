@@ -82,10 +82,24 @@
             font-family: 'Roboto', sans-serif; /* Cambia esto por la fuente que prefieras */
         }
         .services-section {
-            background-image: url(https://github.com/IAT2404/IAT/blob/main/Map03.jpg?raw=true); /* Ruta de la imagen de fondo */
+            position: relative;
+            padding: 40px 20px;
             background-size: cover;
             background-position: center;
-            padding: 40px 20px;
+        }
+        .services-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url(https://github.com/IAT2404/IAT/blob/main/Map03.jpg?raw=true) center center/cover no-repeat;
+            opacity: 0.3; /* Ajusta este valor para cambiar la transparencia de la imagen de fondo */
+        }
+        .services {
+            position: relative;
+            z-index: 1;
         }
         footer {
             background-color: #333;
